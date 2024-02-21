@@ -5,11 +5,12 @@ core-ktx = "1.12.0"
 espresso-core = "3.5.1"
 junit = "4.13.2"
 lifecycle-runtime-ktx = "2.7.0"
+androidx-compose-navigation = "2.7.7"
 
 compose = "1.6.0"
-androidx-compose-bom = "2024.01.00"
-agp = "8.2.1"
-kotlin = "1.9.21"
+androidx-compose-bom = "2024.02.00"
+agp = "8.2.2"
+kotlin = "1.9.22"
 
 squareup-retrofit = "2.9.0"
 squareup-javapoet = "1.13.0"
@@ -33,6 +34,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidx-compose-navigation" }
 
 android-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
