@@ -1,5 +1,6 @@
 # project-generator
 ## 프로젝트 구조
+  
 ``` kotlin
 📁 app
 │   📁 di
@@ -32,7 +33,9 @@
 📁 libs.versions.toml
 ```
 
-## 파일 설명
+## 의존성 그래프
+<img width="561" alt="스크린샷 2024-04-19 오후 10 56 44" src="https://github.com/Tmdhoon2/project-generator/assets/102812085/6a57310c-adb3-445e-b3cf-c6ef312a3da6">
+
 ## app
 **di**
 
