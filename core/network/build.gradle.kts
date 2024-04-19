@@ -37,6 +37,7 @@ android {
 dependencies {
 
     api(project(":core:common"))
+    api(project(":core:local"))
 
     api(libs.io.ktor.android)
     api(libs.io.ktor.serialization)
