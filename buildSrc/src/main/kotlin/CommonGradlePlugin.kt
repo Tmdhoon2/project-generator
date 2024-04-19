@@ -2,6 +2,7 @@ import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
+import org.gradle.kotlin.dsl.project
 
 class CommonGradlePlugin : Plugin<Project> {
     override fun apply(project: Project) {
@@ -32,10 +33,6 @@ class CommonGradlePlugin : Plugin<Project> {
             implementation(libs.findLibrary("androidx.core.ktx").get())
             androidTestImplementation(libs.findLibrary("androidx.junit").get())
             testImplementation(libs.findLibrary("junit").get())
-
-            // hilt(optional)
-            /*implementation(libs.findLibrary("hilt.android").get())
-            kapt(libs.findLibrary(("hilt.android.compiler")).get())*/
         }
     }
 }

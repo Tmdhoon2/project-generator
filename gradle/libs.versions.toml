@@ -7,10 +7,9 @@ junit = "4.13.2"
 lifecycle-runtime-ktx = "2.7.0"
 androidx-compose-navigation = "2.7.7"
 
-compose = "1.6.0"
 androidx-compose-bom = "2024.04.00"
 agp = "8.3.2"
-kotlin = "1.9.22"
+kotlin = "1.9.21"
 
 kotlinx-serialization-json = "1.6.3"
 
@@ -20,6 +19,9 @@ squareup-logging-interceptor = "4.12.0"
 coil-compose = "2.5.0"
 
 hilt-android = "2.51"
+kotlin-gradle-plugin = "1.9.0"
+appcompat = "1.6.1"
+material = "1.11.0"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
@@ -54,6 +56,9 @@ hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-comp
 kotlin-serialization = { group = "org.jetbrains.kotlin", name = "kotlin-serialization", version.ref = "kotlin" }
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+jetbrains-kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

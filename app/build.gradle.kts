@@ -48,7 +48,7 @@ android {
 
 dependencies {
 
-    api(project(":designsystem"))
+    api(project(":core:designsystem"))
 
     api(libs.androidx.core.ktx)
     api(libs.androidx.lifecycle.runtime.ktx)

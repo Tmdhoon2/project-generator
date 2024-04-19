@@ -8,5 +8,9 @@ apply<CommonGradlePlugin>()
 apply<ComposeGradlePlugin>()
 
 android {
-    namespace = "com.seunghoon.designsystem"
+    namespace = "com.seunghoon.core.designsystem"
+}
+
+dependencies {
+    api(project(":core:common"))
 }

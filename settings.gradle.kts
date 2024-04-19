@@ -15,4 +15,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProjectGenerator"
 include(":app")
-include(":designsystem")
+include(":core:designsystem")
+include(":core:network")
+include(":core:domain")
+include(":core:data")
+include(":core:common")

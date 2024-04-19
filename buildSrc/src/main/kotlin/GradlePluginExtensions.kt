@@ -14,22 +14,22 @@ internal fun Project.android(): LibraryExtension {
 internal val Project.libs
     get(): VersionCatalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
-internal fun DependencyHandler.implementation(dependencyNotation: Provider<MinimalExternalModuleDependency>) {
+internal fun DependencyHandler.implementation(dependencyNotation: Any) {
     add("implementation", dependencyNotation)
 }
 
-internal fun DependencyHandler.testImplementation(dependencyNotation: Provider<MinimalExternalModuleDependency>) {
+internal fun DependencyHandler.testImplementation(dependencyNotation: Any) {
     add("testImplementation", dependencyNotation)
 }
 
-internal fun DependencyHandler.androidTestImplementation(dependencyNotation: Provider<MinimalExternalModuleDependency>) {
+internal fun DependencyHandler.androidTestImplementation(dependencyNotation: Any) {
     add("androidTestImplementation", dependencyNotation)
 }
 
-internal fun DependencyHandler.kapt(dependencyNotation: Provider<MinimalExternalModuleDependency>) {
+internal fun DependencyHandler.kapt(dependencyNotation: Any) {
     add("kapt", dependencyNotation)
 }
 
-internal fun DependencyHandler.debugImplementation(dependencyNotation: Provider<MinimalExternalModuleDependency>) {
+internal fun DependencyHandler.debugImplementation(dependencyNotation: Any) {
     add("debugImplementation", dependencyNotation)
 }
