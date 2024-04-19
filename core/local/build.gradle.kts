@@ -6,5 +6,10 @@ plugins {
 apply<CommonGradlePlugin>()
 
 android {
-    namespace = "com.seunghoon.core.common"
+    namespace = "com.seunghoon.core.local"
+}
+
+dependencies {
+
+    api(project(":core:common"))
 }

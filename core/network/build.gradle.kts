@@ -1,8 +1,8 @@
 import java.util.Properties
 
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id(libs.plugins.android.library.get().pluginId)
+    id(libs.plugins.kotlin.android.get().pluginId)
 }
 
 apply<CommonGradlePlugin>()
@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+
     api(project(":core:common"))
 
     api(libs.io.ktor.android)
