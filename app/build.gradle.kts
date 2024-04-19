@@ -59,6 +59,7 @@ dependencies {
     api(libs.androidx.compose.ui.tooling.preview)
     api(libs.androidx.compose.material3)
     api(libs.androidx.compose.navigation)
+    api(libs.io.insert.koin.android)
 
     testApi(libs.junit)
     androidTestApi(libs.androidx.junit)
