@@ -29,6 +29,7 @@ class ComposeGradlePlugin : Plugin<Project> {
             implementation(libs.findLibrary("androidx.compose.ui.graphics").get())
             implementation(libs.findLibrary("androidx.compose.ui.tooling.preview").get())
             implementation(libs.findLibrary("androidx.compose.material3").get())
+            implementation(libs.findLibrary("androidx.compose.navigation").get())
 
             androidTestImplementation(libs.findLibrary("androidx.espresso.core").get())
             androidTestImplementation(platform(libs.findLibrary("androidx.compose.bom").get()))

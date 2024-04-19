@@ -30,9 +30,12 @@ class CommonGradlePlugin : Plugin<Project> {
         val libs = project.libs
         project.dependencies {
             implementation(libs.findLibrary("androidx.core.ktx").get())
-
             androidTestImplementation(libs.findLibrary("androidx.junit").get())
             testImplementation(libs.findLibrary("junit").get())
+
+            // hilt(optional)
+            /*implementation(libs.findLibrary("hilt.android").get())
+            kapt(libs.findLibrary(("hilt.android.compiler")).get())*/
         }
     }
 }

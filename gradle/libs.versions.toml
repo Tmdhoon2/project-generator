@@ -8,15 +8,18 @@ lifecycle-runtime-ktx = "2.7.0"
 androidx-compose-navigation = "2.7.7"
 
 compose = "1.6.0"
-androidx-compose-bom = "2024.02.00"
-agp = "8.2.2"
+androidx-compose-bom = "2024.04.00"
+agp = "8.3.2"
 kotlin = "1.9.22"
 
-squareup-retrofit = "2.9.0"
+kotlinx-serialization-json = "1.6.3"
+
+squareup-retrofit = "2.10.0"
 squareup-javapoet = "1.13.0"
+squareup-logging-interceptor = "4.12.0"
 coil-compose = "2.5.0"
 
-hilt-android = "2.50"
+hilt-android = "2.51"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
@@ -41,11 +44,16 @@ kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-p
 
 com-squareup-retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "squareup-retrofit" }
 com-squareup-javapoet = { group = "com.squareup", name = "javapoet", version.ref = "squareup-javapoet" }
+com-squareup-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareup-logging-interceptor"}
 
 io-coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose" }
 
-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-android" }
-dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-android" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-android" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-android" }
+
+kotlin-serialization = { group = "org.jetbrains.kotlin", name = "kotlin-serialization", version.ref = "kotlin" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
