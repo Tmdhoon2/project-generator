@@ -13,5 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Grant execution permission for gradlew
+        run: chmod +x gradlew
+
       - name: Project Build
         run: ./gradlew build
