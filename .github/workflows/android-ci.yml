@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v3
+        
       - name: Grant execution permission for gradlew
         run: chmod +x gradlew
 
