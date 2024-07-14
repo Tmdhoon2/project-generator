@@ -24,5 +24,8 @@ jobs:
       - name: Grant execution permission for gradlew
         run: chmod +x gradlew
 
+      - name: Create local.properties
+        run: echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
+
       - name: Project Build
         run: ./gradlew build
