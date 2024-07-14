@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build-app:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,25 +28,4 @@ jobs:
         run: echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
 
       - name: Build app module
-        run: ./gradlew :app:build
-
-  build-core:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up JDK 18
-        uses: actions/setup-java@v3
-        with:
-          java-version: '18'
-          distribution: 'corretto'
-
-      - name: Grant execution permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Create local.properties
-        run: echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
-
-      - name: Build core module
-        run: ./gradlew :core:build
+        run: ./gradlew build --parallel
