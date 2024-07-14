@@ -17,12 +17,11 @@ class CommonGradlePlugin : Plugin<Project> {
             defaultConfig {
                 minSdk = ProjectProperties.MIN_SDK
                 testInstrumentationRunner = "androidx.test.runner.AndroidJunitRunner"
-                consumerProguardFiles("consumer-rules.pro")
             }
 
             compileOptions {
-                sourceCompatibility = JavaVersion.VERSION_18
-                targetCompatibility = JavaVersion.VERSION_18
+                sourceCompatibility = JavaVersion.VERSION_19
+                targetCompatibility = JavaVersion.VERSION_19
             }
         }
     }
