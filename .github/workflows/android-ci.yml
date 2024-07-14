@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-app:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,5 +27,12 @@ jobs:
       - name: Create local.properties
         run: echo '${{ secrets.LOCAL_PROPERTIES }}' > ./local.properties
 
-      - name: Project Build
-        run: ./gradlew build
+      - name: Build app module
+        run: ./gradlew :app:build
+
+  build-core:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build core module
+        run: ./gradlew :core:build
